@@ -1,0 +1,34 @@
+body { margin: 0; padding: 0; }
+.auth-container { align-items: center; display: flex; margin: 1rem 0; }
+.auth-container.active .auth-success-icon { display: inline-block; }
+.auth-container button { align-items: center; border: 1px solid #444746; border-radius: 20px; color: #444746; display: inline-flex; font-size: 13px; font-weight: bold; padding-top: 6px; padding-bottom: 6px; }
+.auth-container button:hover { border: 1px solid #444746; box-shadow: 0 1px 4px rgba(0, 0, 0, .2), 0 1px 4px rgba(0, 0, 0, .2); }
+.auth-container button[disabled] { opacity: .3; }
+.auth-container svg { margin-right: 0.5rem; }
+.auth-success-icon { background: #198754; display: none; fill: #fff; border-radius: 50%; height: 24px; margin-left: 5px; position: relative; width: 24px; }
+.auth-success-icon svg { position: absolute; top: 2px; left: 2px; }
+table { max-width: 800px; }
+.album-created-on { white-space: nowrap; }
+.album-action .btn { border-radius: 30px; display: flex; font-size: 14px; justify-content: center; position: relative; text-align: left; white-space: nowrap; width: 180px; }
+.album-action .btn-primary .btn-icon, .album-action .btn-success .btn-text { display: none; }
+.album-action .btn-success .btn-icon { display: block; }
+.album-action svg { fill: currentColor; }
+.table-header-icon { display: inline-flex; flex-direction: column; height: 14px; justify-content: flex-end; margin-left: 5px; position: relative; }
+.table-header-icon-sort { appearance: none; background: none; border: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; box-shadow: none; cursor: pointer; opacity: .3; padding: 0; position: absolute; left: 0; }
+.table-header-icon-sort:hover, .table-header-icon-sort.active { opacity: 1; }
+.table-header-icon-sort-asc { border-bottom: 5px solid black; top: 0; }
+.table-header-icon-sort-desc { border-top: 5px solid black; bottom: 0; }
+.circular { animation: rotate 2s linear infinite; height: 50px; position: relative; width: 50px; }
+.path { stroke-dasharray: 1,200; stroke-dashoffset: 0; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; stroke: currentColor; }
+.album-action .btn-processing { justify-content: flex-start; padding-left: 25px; }
+.btn-icon-processing, .btn-processing-text, .btn-icon { display: none; }
+.btn-icon-processing { position: absolute; top: -9px; left: 0; }
+.btn-processing-text { margin-left: 20px; }
+.btn-processing .btn-icon-processing, .btn-processing .btn-processing-text { display: block; }
+.btn-processing .btn-text { display: none; }
+@keyframes rotate { 100%{ transform: rotate(360deg); } }
+@keyframes dash {
+    0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; }
+    50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; }
+    100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; }
+}
