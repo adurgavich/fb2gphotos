@@ -3,7 +3,7 @@ Migrate Facebook photo albums to Google Photos keeping exil data such as timesta
 
 # Demo site
 https://fb2gphotos.adurgavich.com/
-![alt text](https://github.com/adurgavich/fb2gphotos/blob/main/screenshot.jpg?raw=true)
+![alt text](https://github.com/adurgavich/fb2gphotos/blob/main/screenshot.png?raw=true)
 
 # Prerequisites to deploying/hosting yourself
 1. Create a Facebook App (https://developers.facebook.com/apps/) and find your App ID
